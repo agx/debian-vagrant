@@ -1,6 +1,6 @@
 {
   "variables": {
-    "disk_size": "61440",
+    "disk_size": "10000",
     "version": "9",
     "iso_url": "http://cdimage.debian.org/debian-cd/9.2.1/amd64/iso-cd/debian-9.2.1-amd64-netinst.iso",
     "iso_checksum": "ec78bc48b48d676775b60eda41528ec33c151c2ce7414a12b13d9b73d34de544",
@@ -12,8 +12,8 @@
       "type": "qemu",
       "accelerator": "kvm",
       "qemuargs": [
-        ["-m", "2048"],
-        ["-smp", "2"]
+        ["-m", "512"],
+        ["-smp", "1"]
       ],
       "headless": true,
       "http_directory": ".",
